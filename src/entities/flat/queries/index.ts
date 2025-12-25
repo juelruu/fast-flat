@@ -1,0 +1,1 @@
+export { useFlatsQuery } from './flat.queries';

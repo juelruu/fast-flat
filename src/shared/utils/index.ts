@@ -1,0 +1,1 @@
+export { isNuN } from './is-nun';
