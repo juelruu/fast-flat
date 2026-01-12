@@ -1,5 +1,7 @@
 type NullOrUndefined = null | undefined;
 
-export function isNuN<T = NullOrUndefined>(value: T): value is T {
-  return value === null || value === undefined || Number.isNaN(value);
+export function isNotNuN<T>(
+  value: T
+): value is Exclude<T, NullOrUndefined> | Exclude<T, NullOrUndefined> {
+  return !(value === null || value === undefined || Number.isNaN(value));
 }

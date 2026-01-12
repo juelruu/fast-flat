@@ -1,0 +1,1 @@
+export { FlatInfoPrivatePage } from './flat-info-private';

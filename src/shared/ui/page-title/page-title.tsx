@@ -1,0 +1,1 @@
+export const PageTitle = ({title}: {title: string}) => <h2>{title ?? 'Название страницы еще не заполнено'}</h2>

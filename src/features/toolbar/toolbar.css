@@ -1,0 +1,20 @@
+.toolbar {
+  display: flex;
+  gap: var(--common-gap);
+  background-color: var(--toolbar-background);
+  align-items: center;
+  
+  .links {
+    a {
+      margin-left: var(--common-gap);
+
+      &:nth-child(1) {
+        margin: 0;
+      }
+    }
+  }
+
+  .options {
+    margin-left: auto;
+  }
+}

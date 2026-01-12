@@ -1,4 +1,12 @@
 export type TUser = {
-  name: string;
-  img: string;
+  id: string;
+  telegram_contact: string;
+  email: string;
 };
+
+export type TLoginResponse = {
+  access_token: string;
+  token_type: string;
+};
+
+export type TGetUserResponse = TUser;

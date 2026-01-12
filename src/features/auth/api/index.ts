@@ -1,1 +1,0 @@
-export { login, getUser } from './auth.api';

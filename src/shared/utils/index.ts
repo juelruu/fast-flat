@@ -1,1 +1,1 @@
-export { isNuN } from './is-nun';
+export { isNotNuN } from './is-nun';

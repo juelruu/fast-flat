@@ -1,9 +1,11 @@
-import { FlatList } from '@/features/flat-list';
+import { PageTitle } from '@/shared';
+import { FlatListWidget } from '@/widgets';
 
 export function HomePage() {
   return (
     <>
-      <FlatList />
+      <PageTitle title="Тут надо что то другое разместить" />
+      <FlatListWidget />
     </>
   );
 }

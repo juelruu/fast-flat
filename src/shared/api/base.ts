@@ -51,6 +51,6 @@ export const getAuthorization = (): string | null => {
   const tokenType = getAuthTokenType();
   const token = getAuthToken();
 
-  if (token && tokenType) return `${tokenType}: ${token}`;
+  if (token && tokenType) return `${tokenType} ${token}`;
   else return null;
 };

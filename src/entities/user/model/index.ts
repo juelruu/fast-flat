@@ -1,2 +1,2 @@
 export { useUserStore } from './user.store';
-export type { TUser } from './user.types';
+export type { TUser, TGetUserResponse, TLoginResponse } from './user.types';

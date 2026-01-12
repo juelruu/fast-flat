@@ -1,23 +1,26 @@
 import './App.css';
 import '@/shared/styles/variables.css';
 import '@/shared/styles/color-palette.css';
-import { MyToolbar } from '@/widgets';
+import '@/shared/styles/common-styles.css';
+import { MyToolbar } from '@/features';
 import { Outlet } from 'react-router';
-import { MyOverlay } from '@/shared';
+import { HintOverlay, ModalOverlay } from '@/shared';
 import { AuthToolbarButton } from '../features/auth';
 
 export default function App() {
   return (
     <>
-      <header>
-        <MyToolbar>
-          <AuthToolbarButton />
-        </MyToolbar>
-      </header>
-      <main>
-        <Outlet />
-      </main>
-      <MyOverlay />
+      <ModalOverlay>
+        <header>
+          <MyToolbar>
+            <AuthToolbarButton />
+          </MyToolbar>
+        </header>
+        <main>
+          <Outlet />
+        </main>
+      </ModalOverlay>
+      {/* <HintOverlay /> */}
     </>
-  )
+  );
 }

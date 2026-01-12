@@ -1,1 +1,0 @@
-export { MyDialog, MyDialogTitle, MyDialogContent, MyDialogFooter } from './dialog';

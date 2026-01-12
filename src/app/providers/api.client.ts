@@ -2,7 +2,7 @@ import { getAuthorization } from '@/shared';
 import axios from 'axios';
 
 export const apiClient = axios.create({
-  withCredentials: true
+  withCredentials: true,
 });
 
 apiClient.interceptors.request.use(
